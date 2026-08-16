@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,7 +190,53 @@ footer {
 footer h3 {
     margin-bottom: 8px;
 }
+<section class="category-section">
+    <h2>Latest Categories</h2>
 
+    <div class="category-grid">
+
+        <a href="news.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80" alt="News">
+            <div class="card-content">
+                <h3>📰 News</h3>
+                <p>Latest news and trending updates</p>
+            </div>
+        </a>
+
+        <a href="sports.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80" alt="Cricket Sports">
+            <div class="card-content">
+                <h3>🏏 Cricket & Sports</h3>
+                <p>Live scores, matches and sports news</p>
+            </div>
+        </a>
+
+        <a href="ai.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="Artificial Intelligence">
+            <div class="card-content">
+                <h3>🤖 AI & Technology</h3>
+                <p>Artificial intelligence and technology</p>
+            </div>
+        </a>
+
+        <a href="education.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Education">
+            <div class="card-content">
+                <h3>🎓 Education</h3>
+                <p>Learning, courses and educational updates</p>
+            </div>
+        </a>
+
+        <a href="cooking.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Cooking">
+            <div class="card-content">
+                <h3>🍳 Cooking & Recipes</h3>
+                <p>Delicious recipes and cooking ideas</p>
+            </div>
+        </a>
+
+    </div>
+</section>
 /* BOTTOM MOBILE NAV */
 .bottom-nav {
     position: fixed;
@@ -406,4 +452,60 @@ footer h3 {
 
 </body>
 </html>
+/* your existing CSS */
+
+/* ... existing code ... */
+
+
+/* Category Image Cards */
+
+.category-section {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.category-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.category-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.card-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
 ```
