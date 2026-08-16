@@ -1,44 +1,106 @@
+
 const articles = [
+
+    /* =========================
+       NEWS
+    ========================= */
 
     {
         category: "News",
-        title: "Latest Breaking News",
+        title: "Breaking News",
         description: "Read the latest national and international news updates.",
-        image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80",
         link: "news.html"
     },
+
+    {
+        category: "News",
+        title: "India News Updates",
+        description: "Latest important developments and news from across India.",
+        image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80",
+        link: "news.html"
+    },
+
+    {
+        category: "News",
+        title: "Business News",
+        description: "Stock market, companies, economy and business headlines.",
+        image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=80",
+        link: "news.html"
+    },
+
+    {
+        category: "News",
+        title: "Technology News",
+        description: "Discover the latest technology, AI and digital updates.",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+        link: "news.html"
+    },
+
+    {
+        category: "News",
+        title: "Entertainment News",
+        description: "Movies, music, celebrities and entertainment updates.",
+        image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80",
+        link: "news.html"
+    },
+
+
+    /* =========================
+       SPORTS
+    ========================= */
 
     {
         category: "Sports",
         title: "Latest Cricket Updates",
         description: "Get the latest cricket scores, matches and sports news.",
-        image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=900&q=80",
         link: "sports.html"
     },
+
+
+    /* =========================
+       AI
+    ========================= */
 
     {
         category: "AI",
         title: "Latest AI & Technology",
         description: "Discover the latest developments in artificial intelligence and technology.",
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
         link: "ai.html"
     },
+
+
+    /* =========================
+       EDUCATION
+    ========================= */
 
     {
         category: "Education",
         title: "Education Updates",
         description: "Courses, exams, results and useful learning information.",
-        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
         link: "education.html"
     },
+
+
+    /* =========================
+       COOKING
+    ========================= */
 
     {
         category: "Cooking",
         title: "Delicious Recipes",
         description: "Explore easy and tasty recipes and cooking ideas.",
-        image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80",
         link: "cooking.html"
     }
 
-];
-```
+];{
+    category: "News",
+    title: "My New News Article",
+    description: "This is my new news article.",
+    image: "https://example.com/my-image.jpg",
+    link: "news.html"
+},
