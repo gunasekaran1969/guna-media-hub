@@ -1,13 +1,12 @@
 
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Latest News | Guna Media Hub</title>
 
@@ -15,9 +14,7 @@
 
 </head>
 
-
 <body>
-
 
 <!-- HEADER -->
 
@@ -30,30 +27,11 @@
 </header>
 
 
-<!-- NAVIGATION -->
-
-<nav class="navbar">
-
-    <a href="index.html">Home</a>
-
-    <a href="news.html" class="active">News</a>
-
-    <a href="sports.html">Sports</a>
-
-    <a href="ai.html">AI</a>
-
-    <a href="education.html">Education</a>
-
-    <a href="videos.html">Videos</a>
-
-</nav>
-
-
 <!-- NEWS ARTICLES -->
 
 <section class="news-container" id="newsContainer">
 
-    <!-- Articles will be loaded from content.js -->
+    <!-- News articles will appear here -->
 
 </section>
 
@@ -67,6 +45,33 @@
 </footer>
 
 
+<!-- BOTTOM MOBILE NAVIGATION -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html">
+        <span>🏠</span>
+        <small>Home</small>
+    </a>
+
+    <a href="news.html" class="active">
+        <span>📰</span>
+        <small>News</small>
+    </a>
+
+    <a href="videos.html">
+        <span>🎥</span>
+        <small>Videos</small>
+    </a>
+
+    <a href="profile.html">
+        <span>👤</span>
+        <small>Profile</small>
+    </a>
+
+</nav>
+
+
 <!-- CONTENT DATA -->
 
 <script src="content.js"></script>
@@ -76,23 +81,18 @@
 
 <script>
 
-const newsContainer =
-    document.getElementById("newsContainer");
+const newsContainer = document.getElementById("newsContainer");
 
-
-const newsArticles =
-    articles.filter(article =>
-        article.category === "News"
-    );
+const newsArticles = articles.filter(article =>
+    article.category === "News"
+);
 
 
 newsArticles.forEach(article => {
 
-    const card =
-        document.createElement("div");
+    const card = document.createElement("div");
 
     card.className = "news-card";
-
 
     card.innerHTML = `
 
@@ -101,23 +101,26 @@ newsArticles.forEach(article => {
             alt="${article.title}"
         >
 
-        <h2>
-            ${article.title}
-        </h2>
+        <div class="news-content">
 
-        <p>
-            ${article.description}
-        </p>
+            <h2>
+                ${article.title}
+            </h2>
 
-        <a
-            href="${article.link}"
-            class="read-more"
-        >
-            Read More
-        </a>
+            <p>
+                ${article.description}
+            </p>
 
+            <a
+                href="${article.link}"
+                class="read-more"
+            >
+                Read More →
+            </a>
 
+        </div>
 
+    `;
 
     newsContainer.appendChild(card);
 
@@ -129,4 +132,3 @@ newsArticles.forEach(article => {
 </body>
 
 </html>
-`
