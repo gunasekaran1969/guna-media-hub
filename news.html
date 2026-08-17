@@ -1,0 +1,137 @@
+
+Yesterday 9:10 PM
+Screenshot_2026-08-16-21-02-48-543_com.android.chrome.jpg
+Screenshot_2026-08-16-20-27-09-789_com.android.chrome.jpg
+In this if we press the news the news page is like this
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Latest News | Guna Media Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <h1>📰 Latest News</h1>
+
+    <p>Stay Updated Every Day</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="news.html" class="active">News</a>
+
+    <a href="sports.html">Sports</a>
+
+    <a href="ai.html">AI</a>
+
+    <a href="education.html">Education</a>
+
+    <a href="videos.html">Videos</a>
+
+</nav>
+
+
+<!-- NEWS ARTICLES -->
+
+<section class="news-container" id="newsContainer">
+
+    <!-- Articles will be loaded from content.js -->
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Guna Media Hub</p>
+
+</footer>
+
+
+<!-- CONTENT DATA -->
+
+<script src="content.js"></script>
+
+
+<!-- NEWS JAVASCRIPT -->
+
+<script>
+
+const newsContainer =
+    document.getElementById("newsContainer");
+
+
+const newsArticles =
+    articles.filter(article =>
+        article.category === "News"
+    );
+
+
+newsArticles.forEach(article => {
+
+    const card =
+        document.createElement("div");
+
+    card.className = "news-card";
+
+
+    card.innerHTML = 
+
+        <img
+            src="${article.image}"
+            alt="${article.title}"
+        >
+
+        <h2>
+            ${article.title}
+        </h2>
+
+        <p>
+            ${article.description}
+        </p>
+
+        <a
+            href="${article.link}"
+            class="read-more"
+        >
+            Read More
+        </a>
+
+
+
+
+    newsContainer.appendChild(card);
+
+});
+
+</script>
+
+
+</body>
+
+</html>
