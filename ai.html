@@ -1,3 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI & Technology | Guna Media Hub</title>
+
+<meta name="description"
+content="Artificial Intelligence, ChatGPT, AI tools, machine learning, robotics and technology updates from Guna Media Hub.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f7fc;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #4b00b8, #9c27ff, #00a8ff);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
     margin-bottom: 6px;
 }
 
@@ -22,7 +58,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #0757c9;
+    color: #5b16a5;
     font-weight: bold;
     padding: 9px 14px;
     border-radius: 25px;
@@ -31,7 +67,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background: #0757c9;
+    background: #6a1b9a;
     color: white;
 }
 
@@ -43,46 +79,46 @@ nav a.active {
     padding: 25px 15px 80px;
 }
 
-/* TITLE */
+/* PAGE TITLE */
 
 .page-title {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .page-title h2 {
-    color: #0757c9;
+    color: #6a1b9a;
     font-size: 32px;
 }
 
 .page-title p {
     color: #666;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 
 /* HERO */
 
 .hero {
     background: white;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    margin-bottom: 40px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    margin-bottom: 42px;
 }
 
 .hero img {
     width: 100%;
-    height: 270px;
+    height: 280px;
     object-fit: cover;
 }
 
 .hero-content {
-    padding: 22px;
+    padding: 23px;
 }
 
 .hero-label {
     display: inline-block;
-    background: #e53935;
+    background: #7b1fa2;
     color: white;
     padding: 7px 15px;
     border-radius: 20px;
@@ -91,8 +127,8 @@ nav a.active {
 }
 
 .hero-content h2 {
-    font-size: 26px;
-    color: #174f9c;
+    color: #4a148c;
+    font-size: 27px;
     margin-bottom: 8px;
 }
 
@@ -109,22 +145,22 @@ nav a.active {
 .section-heading {
     display: flex;
     align-items: center;
-    gap: 13px;
-    margin-bottom: 18px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #00a8ff;
+    gap: 14px;
+    padding-bottom: 11px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #8e24aa;
 }
 
 .section-icon {
-    width: 52px;
-    height: 52px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .section-heading h2 {
-    color: #0757c9;
     font-size: 27px;
+    color: #6a1b9a;
 }
 
 .section-heading p {
@@ -134,7 +170,7 @@ nav a.active {
 
 /* GRID */
 
-.sports-grid {
+.ai-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
@@ -142,20 +178,20 @@ nav a.active {
 
 /* CARD */
 
-.sports-card {
+.ai-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 14px rgba(0,0,0,0.09);
     transition: 0.25s;
 }
 
-.sports-card:hover {
+.ai-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+    box-shadow: 0 9px 24px rgba(0,0,0,0.15);
 }
 
-.sports-card img {
+.ai-card img {
     width: 100%;
     height: 190px;
     object-fit: cover;
@@ -167,8 +203,8 @@ nav a.active {
 
 .category {
     display: inline-block;
+    background: #7b1fa2;
     color: white;
-    background: #0757c9;
     font-size: 12px;
     font-weight: bold;
     padding: 5px 11px;
@@ -183,7 +219,7 @@ nav a.active {
 }
 
 .card-content h3 {
-    color: #174f9c;
+    color: #4a148c;
     font-size: 19px;
     line-height: 1.3;
     margin-bottom: 8px;
@@ -199,7 +235,7 @@ nav a.active {
     display: inline-block;
     margin-top: 14px;
     padding: 9px 17px;
-    background: #0757c9;
+    background: #7b1fa2;
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -208,97 +244,76 @@ nav a.active {
 }
 
 .read-more:hover {
-    background: #003f99;
+    background: #4a148c;
 }
 
-/* CRICKET */
+/* DIFFERENT SECTION COLORS */
 
-.cricket .section-heading {
-    border-color: #16a34a;
+.chatgpt .section-heading {
+    border-color: #10a37f;
 }
 
-.cricket .section-heading h2 {
-    color: #15803d;
+.chatgpt .section-heading h2 {
+    color: #087f63;
 }
 
-.cricket .category,
-.cricket .read-more {
-    background: #16a34a;
+.chatgpt .category,
+.chatgpt .read-more {
+    background: #10a37f;
 }
 
-/* FOOTBALL */
-
-.football .section-heading {
-    border-color: #7c3aed;
+.tools .section-heading {
+    border-color: #1565c0;
 }
 
-.football .section-heading h2 {
-    color: #6d28d9;
+.tools .section-heading h2 {
+    color: #1257a6;
 }
 
-.football .category,
-.football .read-more {
-    background: #7c3aed;
+.tools .category,
+.tools .read-more {
+    background: #1565c0;
 }
 
-/* ATHLETICS */
-
-.athletics .section-heading {
-    border-color: #ea580c;
+.robotics .section-heading {
+    border-color: #ef6c00;
 }
 
-.athletics .section-heading h2 {
-    color: #c2410c;
+.robotics .section-heading h2 {
+    color: #d85f00;
 }
 
-.athletics .category,
-.athletics .read-more {
-    background: #ea580c;
+.robotics .category,
+.robotics .read-more {
+    background: #ef6c00;
 }
 
-/* RACQUET SPORTS */
-
-.racquet .section-heading {
-    border-color: #0891b2;
+.future .section-heading {
+    border-color: #00838f;
 }
 
-.racquet .section-heading h2 {
-    color: #087f99;
+.future .section-heading h2 {
+    color: #006b75;
 }
 
-.racquet .category,
-.racquet .read-more {
-    background: #0891b2;
-}
-
-/* INDIAN SPORTS */
-
-.india-sports .section-heading {
-    border-color: #f59e0b;
-}
-
-.india-sports .section-heading h2 {
-    color: #c77700;
-}
-
-.india-sports .category,
-.india-sports .read-more {
-    background: #f59e0b;
+.future .category,
+.future .read-more {
+    background: #00838f;
 }
 
 /* HOME BUTTON */
 
 .home-button {
     text-align: center;
-    margin-top: 45px;
+    margin-top: 48px;
 }
 
 .home-button a {
     display: inline-block;
-    background: linear-gradient(135deg, #0757c9, #00a8ff);
+    background: linear-gradient(135deg, #6a1b9a, #00a8ff);
     color: white;
     text-decoration: none;
-    padding: 13px 25px;
+    padding: 13px 26px;
     border-radius: 30px;
     font-weight: bold;
 }
@@ -306,10 +321,10 @@ nav a.active {
 /* FOOTER */
 
 footer {
-    background: #06366f;
+    background: #29103f;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 27px 15px;
 }
 
 footer p {
@@ -320,7 +335,7 @@ footer p {
 
 @media(max-width: 850px) {
 
-    .sports-grid {
+    .ai-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -337,7 +352,7 @@ footer p {
         padding: 7px 10px;
     }
 
-    .sports-grid {
+    .ai-grid {
         grid-template-columns: 1fr;
     }
 
@@ -346,7 +361,7 @@ footer p {
     }
 
     .hero img {
-        height: 200px;
+        height: 210px;
     }
 
 }
@@ -356,11 +371,12 @@ footer p {
 
 <body>
 
+
 <!-- HEADER -->
 
 <header>
 
-    <h1>🏆 Guna Media Hub</h1>
+    <h1>🤖 Guna Media Hub</h1>
 
     <p>News • Sports • AI • Education • Videos</p>
 
@@ -375,9 +391,9 @@ footer p {
 
     <a href="news.html">📰 News</a>
 
-    <a href="sports.html" class="active">🏆 Sports</a>
+    <a href="sports.html">🏆 Sports</a>
 
-    <a href="ai.html">🤖 AI</a>
+    <a href="ai.html" class="active">🤖 AI</a>
 
     <a href="education.html">🎓 Education</a>
 
@@ -397,36 +413,36 @@ footer p {
 
 <div class="page-title">
 
-    <h2>🏆 Sports</h2>
+    <h2>🤖 Artificial Intelligence</h2>
 
     <p>
-        Sports news, updates, results and stories from India and around the world
+        AI news, tools, technology, robotics and the future of artificial intelligence
     </p>
 
 </div>
 
 
-<!-- SPORTS HERO -->
+<!-- HERO -->
 
 <div class="hero">
 
     <img
-    src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80"
-    alt="Sports">
+    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+    alt="Artificial Intelligence">
 
     <div class="hero-content">
 
         <span class="hero-label">
-            🔴 SPORTS UPDATES
+            🤖 AI & TECHNOLOGY
         </span>
 
         <h2>
-            Latest Sports News & Updates
+            Explore the World of Artificial Intelligence
         </h2>
 
         <p>
-            Follow cricket, football, athletics, tennis, badminton
-            and other sporting events.
+            Discover AI developments, useful tools, ChatGPT,
+            machine learning, robotics and emerging technologies.
         </p>
 
     </div>
@@ -434,50 +450,51 @@ footer p {
 </div>
 
 
-<!-- CRICKET -->
+<!-- AI NEWS -->
 
-<section class="section cricket">
+<section class="section">
+
 
     <div class="section-heading">
 
         <img
         class="section-icon"
-        src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=150&q=80"
-        alt="Cricket">
+        src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=150&q=80"
+        alt="AI News">
 
         <div>
 
-            <h2>🏏 Cricket</h2>
+            <h2>🧠 AI News</h2>
 
-            <p>Cricket news, matches, players and updates</p>
+            <p>Latest developments in artificial intelligence</p>
 
         </div>
 
     </div>
 
 
-    <div class="sports-grid">
+    <div class="ai-grid">
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
-            alt="Cricket match">
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+            alt="AI">
 
             <div class="card-content">
 
-                <span class="category">Cricket</span>
+                <span class="category">AI News</span>
 
-                <small>Cricket Updates</small>
+                <small>Artificial Intelligence</small>
 
                 <h3>
-                    Latest Cricket News
+                    Latest AI Developments
                 </h3>
 
                 <p>
-                    Follow the latest cricket stories,
-                    matches and important updates.
+                    Discover important developments and
+                    innovations in artificial intelligence.
                 </p>
 
                 <a href="#" class="read-more">
@@ -489,25 +506,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
-            alt="Cricket stadium">
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+            alt="AI Robot">
 
             <div class="card-content">
 
-                <span class="category">Matches</span>
+                <span class="category">AI Research</span>
 
-                <small>Match Updates</small>
+                <small>Innovation</small>
 
                 <h3>
-                    Cricket Match Updates
+                    New AI Research & Innovation
                 </h3>
 
                 <p>
-                    Match information, schedules and
-                    cricket-related updates.
+                    Explore new ideas and research shaping
+                    the future of AI.
                 </p>
 
                 <a href="#" class="read-more">
@@ -519,25 +536,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1593766788306-28561086694e?auto=format&fit=crop&w=800&q=80"
-            alt="Cricket player">
+            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+            alt="AI Technology">
 
             <div class="card-content">
 
-                <span class="category">Players</span>
+                <span class="category">AI Trends</span>
 
-                <small>Cricket</small>
+                <small>Technology</small>
 
                 <h3>
-                    Cricket Players & Performances
+                    AI Trends to Watch
                 </h3>
 
                 <p>
-                    Player performances, achievements
-                    and cricket stories.
+                    Learn about emerging artificial intelligence
+                    trends and applications.
                 </p>
 
                 <a href="#" class="read-more">
@@ -547,56 +564,58 @@ footer p {
             </div>
 
         </article>
+
 
     </div>
 
 </section>
 
 
-<!-- FOOTBALL -->
+<!-- CHATGPT -->
 
-<section class="section football">
+<section class="section chatgpt">
+
 
     <div class="section-heading">
 
         <img
         class="section-icon"
-        src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=150&q=80"
-        alt="Football">
+        src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=150&q=80"
+        alt="AI Assistant">
 
         <div>
 
-            <h2>⚽ Football</h2>
+            <h2>💬 ChatGPT & AI Assistants</h2>
 
-            <p>Football matches, teams and player updates</p>
+            <p>AI assistants, productivity and everyday uses</p>
 
         </div>
 
     </div>
 
 
-    <div class="sports-grid">
+    <div class="ai-grid">
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80"
-            alt="Football">
+            src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=800&q=80"
+            alt="AI Assistant">
 
             <div class="card-content">
 
-                <span class="category">Football</span>
+                <span class="category">ChatGPT</span>
 
-                <small>Football News</small>
+                <small>AI Assistant</small>
 
                 <h3>
-                    Latest Football News
+                    ChatGPT & AI Assistants
                 </h3>
 
                 <p>
-                    Follow major football stories,
-                    matches and developments.
+                    Learn how AI assistants can help with
+                    writing, learning and productivity.
                 </p>
 
                 <a href="#" class="read-more">
@@ -608,25 +627,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=800&q=80"
-            alt="Football player">
+            src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=800&q=80"
+            alt="AI chatbot">
 
             <div class="card-content">
 
-                <span class="category">Players</span>
+                <span class="category">AI Tools</span>
 
-                <small>Football</small>
+                <small>Productivity</small>
 
                 <h3>
-                    Football Players & Teams
+                    Useful AI Tools
                 </h3>
 
                 <p>
-                    Player performances, teams and
-                    football stories.
+                    Discover AI-powered tools that can support
+                    work, study and creativity.
                 </p>
 
                 <a href="#" class="read-more">
@@ -638,25 +657,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80"
-            alt="Football stadium">
+            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
+            alt="Artificial Intelligence">
 
             <div class="card-content">
 
-                <span class="category">Matches</span>
+                <span class="category">Productivity</span>
 
-                <small>Football</small>
+                <small>AI</small>
 
                 <h3>
-                    Football Match Updates
+                    AI for Everyday Work
                 </h3>
 
                 <p>
-                    Match news, results and football
-                    tournament information.
+                    Practical ways to use artificial intelligence
+                    for everyday tasks.
                 </p>
 
                 <a href="#" class="read-more">
@@ -666,56 +685,58 @@ footer p {
             </div>
 
         </article>
+
 
     </div>
 
 </section>
 
 
-<!-- ATHLETICS -->
+<!-- AI TOOLS -->
 
-<section class="section athletics">
+<section class="section tools">
+
 
     <div class="section-heading">
 
         <img
         class="section-icon"
-        src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=150&q=80"
-        alt="Athletics">
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=150&q=80"
+        alt="Technology">
 
         <div>
 
-            <h2>🏃 Athletics</h2>
+            <h2>🛠️ AI Tools & Technology</h2>
 
-            <p>Running, track and field and athletic events</p>
+            <p>Discover useful AI tools and technology</p>
 
         </div>
 
     </div>
 
 
-    <div class="sports-grid">
+    <div class="ai-grid">
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=800&q=80"
-            alt="Running">
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+            alt="Technology">
 
             <div class="card-content">
 
-                <span class="category">Athletics</span>
+                <span class="category">Technology</span>
 
-                <small>Track & Field</small>
+                <small>AI Tools</small>
 
                 <h3>
-                    Athletics News
+                    New AI Tools
                 </h3>
 
                 <p>
-                    Updates from running, track and field
-                    sporting events.
+                    Explore new AI-powered applications and
+                    digital tools.
                 </p>
 
                 <a href="#" class="read-more">
@@ -727,25 +748,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
-            alt="Running race">
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+            alt="Data Analytics">
 
             <div class="card-content">
 
-                <span class="category">Running</span>
+                <span class="category">Data</span>
 
-                <small>Athletics</small>
+                <small>AI & Analytics</small>
 
                 <h3>
-                    Running & Marathon Updates
+                    AI & Data Analytics
                 </h3>
 
                 <p>
-                    Running events, races and
-                    athletic achievements.
+                    Understand how AI is being used with
+                    data and analytics.
                 </p>
 
                 <a href="#" class="read-more">
@@ -757,25 +778,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=800&q=80"
-            alt="Athlete">
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+            alt="Cyber technology">
 
             <div class="card-content">
 
-                <span class="category">Athletes</span>
+                <span class="category">Digital</span>
 
-                <small>Sports</small>
+                <small>Technology</small>
 
                 <h3>
-                    Athlete Stories
+                    AI & Digital Transformation
                 </h3>
 
                 <p>
-                    Inspiring stories and achievements
-                    from athletes.
+                    See how artificial intelligence is
+                    transforming digital services.
                 </p>
 
                 <a href="#" class="read-more">
@@ -785,56 +806,58 @@ footer p {
             </div>
 
         </article>
+
 
     </div>
 
 </section>
 
 
-<!-- TENNIS & BADMINTON -->
+<!-- ROBOTICS -->
 
-<section class="section racquet">
+<section class="section robotics">
+
 
     <div class="section-heading">
 
         <img
         class="section-icon"
-        src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=150&q=80"
-        alt="Tennis">
+        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=150&q=80"
+        alt="Robotics">
 
         <div>
 
-            <h2>🎾 Tennis & Badminton</h2>
+            <h2>🦾 Robotics</h2>
 
-            <p>Racquet sports, players and tournaments</p>
+            <p>Robots, automation and intelligent machines</p>
 
         </div>
 
     </div>
 
 
-    <div class="sports-grid">
+    <div class="ai-grid">
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=800&q=80"
-            alt="Tennis">
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+            alt="Robot">
 
             <div class="card-content">
 
-                <span class="category">Tennis</span>
+                <span class="category">Robotics</span>
 
-                <small>Tennis News</small>
+                <small>Automation</small>
 
                 <h3>
-                    Latest Tennis Updates
+                    Latest Robotics Developments
                 </h3>
 
                 <p>
-                    Tennis tournaments, players and
-                    important sporting updates.
+                    Discover new robots, automation systems
+                    and intelligent machines.
                 </p>
 
                 <a href="#" class="read-more">
@@ -846,25 +869,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80"
-            alt="Badminton">
+            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
+            alt="Robot technology">
 
             <div class="card-content">
 
-                <span class="category">Badminton</span>
+                <span class="category">Automation</span>
 
-                <small>Badminton News</small>
+                <small>Robotics</small>
 
                 <h3>
-                    Badminton Updates
+                    Robots in Everyday Life
                 </h3>
 
                 <p>
-                    Badminton matches, players and
-                    tournament updates.
+                    Explore how robotics and automation
+                    are being used in different industries.
                 </p>
 
                 <a href="#" class="read-more">
@@ -876,25 +899,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=800&q=80"
-            alt="Tennis player">
+            src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80"
+            alt="Future technology">
 
             <div class="card-content">
 
-                <span class="category">Players</span>
+                <span class="category">Future Tech</span>
 
-                <small>Racquet Sports</small>
+                <small>Robotics</small>
 
                 <h3>
-                    Tennis & Badminton Players
+                    The Future of Intelligent Machines
                 </h3>
 
                 <p>
-                    Player performances, achievements
-                    and sporting stories.
+                    Learn about the future possibilities
+                    of robotics and intelligent systems.
                 </p>
 
                 <a href="#" class="read-more">
@@ -904,86 +927,58 @@ footer p {
             </div>
 
         </article>
+
 
     </div>
 
 </section>
 
 
-<!-- INDIAN SPORTS -->
+<!-- FUTURE OF AI -->
 
-<section class="section india-sports">
+<section class="section future">
+
 
     <div class="section-heading">
 
         <img
         class="section-icon"
-        src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?auto=format&fit=crop&w=150&q=80"
-        alt="Indian Sports">
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=150&q=80"
+        alt="Future Technology">
 
         <div>
 
-            <h2>🇮🇳 Indian Sports</h2>
+            <h2>🚀 Future of AI</h2>
 
-            <p>Indian athletes, teams and sporting achievements</p>
+            <p>Emerging technologies and the future of AI</p>
 
         </div>
 
     </div>
 
 
-    <div class="sports-grid">
+    <div class="ai-grid">
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?auto=format&fit=crop&w=800&q=80"
-            alt="Indian sports">
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+            alt="Future technology">
 
             <div class="card-content">
 
-                <span class="category">India</span>
+                <span class="category">Future</span>
 
-                <small>Indian Sports</small>
+                <small>Emerging Technology</small>
 
                 <h3>
-                    Indian Sports Updates
+                    The Future of Artificial Intelligence
                 </h3>
 
                 <p>
-                    Follow sporting developments and
-                    achievements from India.
-                </p>
-
-                <a href="https://yas.gov.in/" target="_blank" class="read-more">
-                    Sports Updates →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="sports-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80"
-            alt="Cycling">
-
-            <div class="card-content">
-
-                <span class="category">Athletes</span>
-
-                <small>India</small>
-
-                <h3>
-                    Indian Athletes
-                </h3>
-
-                <p>
-                    Stories and achievements of Indian
-                    sportspersons.
+                    Explore emerging technologies and
+                    possible future applications of AI.
                 </p>
 
                 <a href="#" class="read-more">
@@ -995,25 +990,25 @@ footer p {
         </article>
 
 
-        <article class="sports-card">
+        <article class="ai-card">
 
             <img
-            src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=800&q=80"
-            alt="Sports competition">
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+            alt="Technology team">
 
             <div class="card-content">
 
-                <span class="category">Events</span>
+                <span class="category">Innovation</span>
 
-                <small>Sports</small>
+                <small>Technology</small>
 
                 <h3>
-                    Major Sports Events
+                    AI & Innovation
                 </h3>
 
                 <p>
-                    Important competitions and sporting
-                    events from India and abroad.
+                    How artificial intelligence is creating
+                    new possibilities for innovation.
                 </p>
 
                 <a href="#" class="read-more">
@@ -1023,13 +1018,44 @@ footer p {
             </div>
 
         </article>
+
+
+        <article class="ai-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+            alt="Technology learning">
+
+            <div class="card-content">
+
+                <span class="category">Learning</span>
+
+                <small>AI Education</small>
+
+                <h3>
+                    Learn About AI
+                </h3>
+
+                <p>
+                    Beginner-friendly information for people
+                    who want to understand AI.
+                </p>
+
+                <a href="#" class="read-more">
+                    Read More →
+                </a>
+
+            </div>
+
+        </article>
+
 
     </div>
 
 </section>
 
 
-<!-- HOME -->
+<!-- HOME BUTTON -->
 
 <div class="home-button">
 
@@ -1047,7 +1073,7 @@ footer p {
 
 <footer>
 
-    <p><strong>🏆 Guna Media Hub</strong></p>
+    <p><strong>🤖 Guna Media Hub</strong></p>
 
     <p>
         News • Sports • AI • Education • Videos
