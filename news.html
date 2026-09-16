@@ -1,137 +1,455 @@
-
-Yesterday 9:10 PM
-Screenshot_2026-08-16-21-02-48-543_com.android.chrome.jpg
-Screenshot_2026-08-16-20-27-09-789_com.android.chrome.jpg
-In this if we press the news the news page is like this
-
-
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+  <title>News | Guna Media Hub</title>
+  <meta name="description" content="Latest news, Tamil Nadu news, India news, technology, AI and business updates from Guna Media Hub.">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<title>Latest News | Guna Media Hub</title>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
 
-<link rel="stylesheet" href="style.css">
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0757c9, #00a8ff);
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+    }
 
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 15px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #ffffff;
+      padding: 12px 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      color: #0757c9;
+      font-weight: bold;
+      margin: 5px 8px;
+      padding: 7px 10px;
+      border-radius: 20px;
+    }
+
+    nav a:hover {
+      background: #0757c9;
+      color: white;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 15px 100px;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .page-title h2 {
+      color: #0757c9;
+      font-size: 28px;
+    }
+
+    .page-title p {
+      color: #666;
+      margin-top: 5px;
+    }
+
+    /* BREAKING NEWS */
+    .breaking {
+      background: #ffffff;
+      border-left: 6px solid #e53935;
+      padding: 18px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .breaking h3 {
+      color: #e53935;
+      margin-bottom: 8px;
+    }
+
+    /* CATEGORY */
+    .category-title {
+      margin: 30px 0 15px;
+      color: #0757c9;
+      border-bottom: 2px solid #00a8ff;
+      padding-bottom: 7px;
+    }
+
+    /* NEWS GRID */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+    }
+
+    .news-image {
+      width: 100%;
+      height: 170px;
+      background: linear-gradient(135deg, #0757c9, #00a8ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .news-content {
+      padding: 18px;
+    }
+
+    .news-content small {
+      color: #777;
+    }
+
+    .news-content h3 {
+      color: #0757c9;
+      margin: 8px 0;
+      font-size: 19px;
+    }
+
+    .news-content p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 12px;
+      background: #0757c9;
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      background: #003f99;
+    }
+
+    /* HOME BUTTON */
+    .home-button {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .home-button a {
+      display: inline-block;
+      background: #0757c9;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0757c9;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    footer p {
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        font-size: 14px;
+        margin: 3px;
+      }
+
+      .news-image {
+        height: 190px;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <!-- HEADER -->
+  <header>
+    <h1>📰 Guna Media Hub</h1>
+    <p>News • Sports • AI • Education • Videos</p>
+  </header>
 
-<!-- HEADER -->
-
-<header class="header">
-
-    <h1>📰 Latest News</h1>
-
-    <p>Stay Updated Every Day</p>
-
-</header>
-
-
-<!-- NAVIGATION -->
-
-<nav class="navbar">
-
+  <!-- NAVIGATION -->
+  <nav>
     <a href="index.html">Home</a>
-
-    <a href="news.html" class="active">News</a>
-
+    <a href="news.html">News</a>
     <a href="sports.html">Sports</a>
-
     <a href="ai.html">AI</a>
-
     <a href="education.html">Education</a>
-
     <a href="videos.html">Videos</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-</nav>
+  <!-- MAIN CONTENT -->
+  <main>
 
+    <div class="page-title">
+      <h2>📰 Latest News</h2>
+      <p>Stay updated with the latest important news and information.</p>
+    </div>
 
-<!-- NEWS ARTICLES -->
+    <!-- BREAKING NEWS -->
+    <section class="breaking">
+      <h3>🔴 Breaking News</h3>
+      <p>
+        Latest important updates will appear here. Add your breaking-news
+        headline and connect it to the full article.
+      </p>
+    </section>
 
-<section class="news-container" id="newsContainer">
+    <!-- TAMIL NADU & INDIA -->
+    <h2 class="category-title">🇮🇳 Tamil Nadu & India</h2>
 
-    <!-- Articles will be loaded from content.js -->
+    <div class="news-grid">
 
-</section>
+      <article class="news-card">
+        <div class="news-image">Tamil Nadu News</div>
 
+        <div class="news-content">
+          <small>Latest Update</small>
+          <h3>Tamil Nadu Latest News</h3>
+          <p>
+            Add your latest Tamil Nadu news headline and a short description here.
+          </p>
 
-<!-- FOOTER -->
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
-<footer>
+      <article class="news-card">
+        <div class="news-image">India News</div>
 
-    <p>© 2026 Guna Media Hub</p>
+        <div class="news-content">
+          <small>India</small>
+          <h3>Latest India News</h3>
+          <p>
+            Add important national news and updates here.
+          </p>
 
-</footer>
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
+      <article class="news-card">
+        <div class="news-image">World News</div>
 
-<!-- CONTENT DATA -->
+        <div class="news-content">
+          <small>World</small>
+          <h3>World News Updates</h3>
+          <p>
+            Add major international news and developments here.
+          </p>
 
-<script src="content.js"></script>
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
+    </div>
 
-<!-- NEWS JAVASCRIPT -->
+    <!-- TECHNOLOGY -->
+    <h2 class="category-title">🤖 Technology & AI</h2>
 
-<script>
+    <div class="news-grid">
 
-const newsContainer =
-    document.getElementById("newsContainer");
+      <article class="news-card">
+        <div class="news-image">AI News</div>
 
+        <div class="news-content">
+          <small>Technology</small>
+          <h3>Artificial Intelligence Updates</h3>
+          <p>
+            Latest developments, tools and important AI news.
+          </p>
 
-const newsArticles =
-    articles.filter(article =>
-        article.category === "News"
-    );
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
+      <article class="news-card">
+        <div class="news-image">Technology</div>
 
-newsArticles.forEach(article => {
+        <div class="news-content">
+          <small>Technology</small>
+          <h3>Technology News</h3>
+          <p>
+            Discover the latest technology trends and innovations.
+          </p>
 
-    const card =
-        document.createElement("div");
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
-    card.className = "news-card";
+      <article class="news-card">
+        <div class="news-image">Digital World</div>
 
+        <div class="news-content">
+          <small>Digital</small>
+          <h3>Digital Updates</h3>
+          <p>
+            Useful updates from the digital and online world.
+          </p>
 
-    card.innerHTML = 
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
-        <img
-            src="${article.image}"
-            alt="${article.title}"
-        >
+    </div>
 
-        <h2>
-            ${article.title}
-        </h2>
+    <!-- BUSINESS -->
+    <h2 class="category-title">💼 Business & Economy</h2>
 
-        <p>
-            ${article.description}
-        </p>
+    <div class="news-grid">
 
-        <a
-            href="${article.link}"
-            class="read-more"
-        >
-            Read More
-        </a>
+      <article class="news-card">
+        <div class="news-image">Business</div>
 
+        <div class="news-content">
+          <small>Business</small>
+          <h3>Business News</h3>
+          <p>
+            Latest business developments and important updates.
+          </p>
 
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
+      <article class="news-card">
+        <div class="news-image">Economy</div>
 
-    newsContainer.appendChild(card);
+        <div class="news-content">
+          <small>Economy</small>
+          <h3>Economic Updates</h3>
+          <p>
+            Follow important economic developments and information.
+          </p>
 
-});
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
 
-</script>
+      <article class="news-card">
+        <div class="news-image">Jobs</div>
 
+        <div class="news-content">
+          <small>Career</small>
+          <h3>Jobs & Career News</h3>
+          <p>
+            Useful information about jobs, careers and opportunities.
+          </p>
+
+          <a class="read-more" href="#" target="_blank">
+            Read More →
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- HOME BUTTON -->
+    <div class="home-button">
+      <a href="index.html">← Back to Home</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Guna Media Hub</strong></p>
+    <p>News • Sports • AI • Education • Videos</p>
+    <p>© 2026 Guna Media Hub. All Rights Reserved.</p>
+  </footer>
 
 </body>
-
 </html>
+```
