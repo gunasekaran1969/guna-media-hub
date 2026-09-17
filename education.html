@@ -3,55 +3,511 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Education | Guna Media Hub</title>
 
-<link rel="stylesheet" href="style.css">
+<meta name="description"
+content="Education, competitive exams, online learning, skills, courses and career information from Guna Media Hub.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f7fc;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #0757c9, #00a8ff);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0757c9;
+    font-weight: bold;
+    padding: 9px 13px;
+    border-radius: 25px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #0757c9;
+    color: white;
+}
+
+/* MAIN */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px 15px 70px;
+}
+
+/* TITLE */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-title h2 {
+    color: #0757c9;
+    font-size: 32px;
+}
+
+.page-title p {
+    color: #666;
+    margin-top: 6px;
+}
+
+/* EDUCATION GRID */
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* CARD */
+
+.education-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: 0.25s;
+}
+
+.education-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 9px 24px rgba(0,0,0,0.16);
+}
+
+.education-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.tag {
+    display: inline-block;
+    background: #0757c9;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content h3 {
+    color: #174f9c;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 9px 17px;
+    background: #0757c9;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* DIFFERENT COLORS */
+
+.card2 .tag,
+.card2 .button {
+    background: #7b1fa2;
+}
+
+.card3 .tag,
+.card3 .button {
+    background: #e53935;
+}
+
+.card4 .tag,
+.card4 .button {
+    background: #00897b;
+}
+
+.card5 .tag,
+.card5 .button {
+    background: #ef6c00;
+}
+
+.card6 .tag,
+.card6 .button {
+    background: #2e7d32;
+}
+
+/* HOME */
+
+.home-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.home-button a {
+    display: inline-block;
+    background: linear-gradient(135deg, #0757c9, #00a8ff);
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #06366f;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 550px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 7px 9px;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-<header class="header">
-<h1>🎓 Education</h1>
-<p>Learn • Grow • Succeed</p>
+<!-- HEADER -->
+
+<header>
+
+    <h1>🎓 Guna Media Hub</h1>
+
+    <p>News • Sports • AI • Education • Videos</p>
+
 </header>
 
-<nav class="navbar">
-<a href="index.html">Home</a>
-<a href="news.html">News</a>
-<a href="sports.html">Sports</a>
-<a href="ai.html">AI</a>
-<a href="education.html" class="active">Education</a>
-<a href="videos.html">Videos</a>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">🏠 Home</a>
+
+    <a href="news.html">📰 News</a>
+
+    <a href="sports.html">🏆 Sports</a>
+
+    <a href="ai.html">🤖 AI</a>
+
+    <a href="education.html" class="active">🎓 Education</a>
+
+    <a href="videos.html">▶️ Videos</a>
+
+    <a href="profile.html">👤 Profile</a>
+
+    <a href="contact.html">✉️ Contact</a>
+
 </nav>
 
-<section class="news-container">
 
-<div class="news-card">
-<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800">
-<h2>📚 Study Materials</h2>
-<p>Access notes, guides, exam preparation materials, and learning resources for students.</p>
-<button>Read More</button>
+<main class="container">
+
+
+<!-- TITLE -->
+
+<div class="page-title">
+
+    <h2>🎓 Education</h2>
+
+    <p>
+        Learn, improve your skills and discover new opportunities
+    </p>
+
 </div>
 
-<div class="news-card">
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800">
-<h2>💻 Online Courses</h2>
-<p>Discover free and paid online courses to improve your skills in technology, business, and more.</p>
-<button>Explore</button>
+
+<!-- SIX EDUCATION TAGS -->
+
+<div class="education-grid">
+
+
+<!-- 1 -->
+
+<article class="education-card">
+
+    <img
+    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+    alt="School Education">
+
+    <div class="card-content">
+
+        <span class="tag">📚 School Education</span>
+
+        <h3>School Education</h3>
+
+        <p>
+            Useful learning resources, study information
+            and educational updates for students.
+        </p>
+
+        <a href="#" class="button">
+            Explore →
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- 2 -->
+
+<article class="education-card card2">
+
+    <img
+    src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
+    alt="Higher Education">
+
+    <div class="card-content">
+
+        <span class="tag">🎓 Higher Education</span>
+
+        <h3>Higher Education</h3>
+
+        <p>
+            Information about colleges, universities,
+            degrees and higher studies.
+        </p>
+
+        <a href="#" class="button">
+            Explore →
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- 3 -->
+
+<article class="education-card card3">
+
+    <img
+    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
+    alt="Competitive Exams">
+
+    <div class="card-content">
+
+        <span class="tag">📝 Competitive Exams</span>
+
+        <h3>Competitive Exams</h3>
+
+        <p>
+            Exam information, preparation resources,
+            practice and useful study tips.
+        </p>
+
+        <a href="#" class="button">
+            Explore →
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- 4 -->
+
+<article class="education-card card4">
+
+    <img
+    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+    alt="Online Learning">
+
+    <div class="card-content">
+
+        <span class="tag">💻 Online Learning</span>
+
+        <h3>Online Learning</h3>
+
+        <p>
+            Discover online learning resources,
+            digital courses and educational platforms.
+        </p>
+
+        <a href="#" class="button">
+            Explore →
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- 5 -->
+
+<article class="education-card card5">
+
+    <img
+    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+    alt="Skills and Courses">
+
+    <div class="card-content">
+
+        <span class="tag">🧠 Skills & Courses</span>
+
+        <h3>Skills & Courses</h3>
+
+        <p>
+            Build useful skills through courses,
+            training and practical learning.
+        </p>
+
+        <a href="#" class="button">
+            Explore →
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- 6 -->
+
+<article class="education-card card6">
+
+    <img
+    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
+    alt="Career and Jobs">
+
+    <div class="card-content">
+
+        <span class="tag">💼 Career & Jobs</span>
+
+        <h3>Career & Jobs</h3>
+
+        <p>
+            Explore career information, job opportunities,
+            skills and employment resources.
+        </p>
+
+        <a href="#" class="button">
+            Explore →
+        </a>
+
+    </div>
+
+</article>
+
+
 </div>
 
-<div class="news-card">
-<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=800">
-<h2>🏆 Career & Exams</h2>
-<p>Get updates on government exams, career guidance, interview tips, and scholarships.</p>
-<button>Learn More</button>
+
+<!-- HOME BUTTON -->
+
+<div class="home-button">
+
+    <a href="index.html">
+        🏠 Back to Guna Media Hub
+    </a>
+
 </div>
 
-</section>
+
+</main>
+
+
+<!-- FOOTER -->
 
 <footer>
-<p>© 2026 Guna Media Hub</p>
+
+    <p><strong>🎓 Guna Media Hub</strong></p>
+
+    <p>
+        News • Sports • AI • Education • Videos
+    </p>
+
+    <p>
+        © 2026 Guna Media Hub. All Rights Reserved.
+    </p>
+
 </footer>
+
 
 </body>
 </html>
