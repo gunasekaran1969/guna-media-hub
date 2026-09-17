@@ -1,830 +1,717 @@
-/* ==============================
-   HEADER
-================================ */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-header {
-    background: linear-gradient(135deg, #0757c9, #00a8ff);
-    color: white;
-    text-align: center;
-    padding: 28px 15px;
+<title>Guna Media Hub | News, Sports, AI, Education & Videos</title>
+
+<meta name="description"
+content="Guna Media Hub - News, Sports, AI, Education, Career information and YouTube videos.">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-header h1 {
-    font-size: 30px;
-    margin-bottom: 8px;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
 }
 
-header p {
-    font-size: 15px;
+header{
+    background:linear-gradient(135deg,#0757c9,#00a8ff);
+    color:white;
+    text-align:center;
+    padding:35px 15px;
 }
 
-
-/* ==============================
-   DESKTOP NAVIGATION
-================================ */
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #073b91;
+header h1{
+    font-size:38px;
+    margin-bottom:8px;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 13px 12px;
-    font-size: 14px;
+header p{
+    font-size:17px;
 }
 
-.navbar a:hover {
-    background: #0d6efd;
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#061b3a;
+    padding:12px 8px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.2);
 }
 
-
-/* ==============================
-   HERO
-================================ */
-
-.hero {
-    padding: 55px 20px;
-    text-align: center;
-    color: white;
-    background: linear-gradient(135deg, #0d6efd, #00b4ff);
+nav a{
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    padding:9px 12px;
+    margin:3px;
+    border-radius:20px;
+    font-weight:bold;
+    font-size:14px;
 }
 
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+nav a:hover{
+    background:#00a8ff;
 }
 
-.hero p {
-    max-width: 650px;
-    margin: auto;
-    line-height: 1.6;
-    font-size: 17px;
+.hero{
+    min-height:430px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px 15px;
+    background:
+    linear-gradient(rgba(0,40,100,.65),rgba(0,20,60,.75)),
+    url("https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 13px 28px;
-    background: white;
-    color: #0757c9;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
+.hero-content{
+    max-width:800px;
 }
 
-
-/* ==============================
-   SECTION TITLE
-================================ */
-
-.section-title {
-    text-align: center;
-    padding: 30px 15px 10px;
+.hero h2{
+    font-size:44px;
+    margin-bottom:15px;
 }
 
-.section-title h2 {
-    color: #0757c9;
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
 }
 
-.section-title p {
-    margin-top: 8px;
-    color: #666;
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
 }
 
-
-/* ==============================
-   MAIN CARDS
-================================ */
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-
-    gap: 20px;
+.btn{
+    display:inline-block;
+    padding:13px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.card {
-    display: block;
-    background: white;
-    padding: 25px 20px;
-    border-radius: 18px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-
-    transition: 0.25s;
-    border: 1px solid #eee;
+.btn:hover{
+    transform:translateY(-3px);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+.btn-white{
+    background:white;
+    color:#0757c9;
 }
 
-.card .icon {
-    font-size: 42px;
-    margin-bottom: 12px;
+.btn-red{
+    background:#ff1744;
+    color:white;
 }
 
-.card h3 {
-    color: #0757c9;
-    margin-bottom: 10px;
-    font-size: 21px;
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:45px 15px;
 }
 
-.card p {
-    line-height: 1.5;
-    color: #666;
-    font-size: 14px;
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
 }
 
-
-/* ==============================
-   STEP 2 - CATEGORY IMAGE CARDS
-================================ */
-
-.category-section {
-    padding: 30px 20px;
-    max-width: 1200px;
-    margin: auto;
+.section-title h2{
+    font-size:32px;
+    color:#0757c9;
 }
 
-.category-section h2 {
-    text-align: center;
-    color: #0757c9;
-    font-size: 30px;
-    margin-bottom: 25px;
+.section-title p{
+    color:#666;
 }
 
-.category-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 20px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
 }
 
-.category-card {
-    display: block;
-
-    background: white;
-
-    border-radius: 16px;
-
-    overflow: hidden;
-
-    text-decoration: none;
-
-    color: #222;
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.12);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.10);
+    transition:.3s;
 }
 
-.category-card:hover {
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,0.18);
+.card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 10px 25px rgba(0,0,0,.16);
 }
 
-.category-card img {
-    width: 100%;
-    height: 170px;
-
-    object-fit: cover;
-
-    display: block;
+.card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
 }
 
-.card-content {
-    padding: 15px;
+.card-content{
+    padding:20px;
 }
 
-.card-content h3 {
-    margin: 0 0 8px;
-
-    font-size: 20px;
-
-    color: #0757c9;
+.card h3{
+    margin-bottom:10px;
+    font-size:22px;
 }
 
-.card-content p {
-    margin: 0;
-
-    color: #666;
-
-    font-size: 14px;
-
-    line-height: 1.5;
+.card p{
+    color:#666;
+    margin-bottom:18px;
 }
 
-
-/* ==============================
-   FEATURED
-================================ */
-
-.featured {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
+.card a{
+    display:inline-block;
+    text-decoration:none;
+    padding:10px 17px;
+    border-radius:25px;
+    color:white;
+    font-weight:bold;
 }
 
-.featured-box {
-    background: white;
-    border-radius: 18px;
-    padding: 25px;
+/* Card colors */
 
-    box-shadow:
-        0 5px 15px rgba(0,0,0,0.1);
+.news .card h3{color:#e91e63;}
+.news .card a{background:#e91e63;}
+
+.sports .card h3{color:#00897b;}
+.sports .card a{background:#00897b;}
+
+.ai .card h3{color:#7b1fa2;}
+.ai .card a{background:#7b1fa2;}
+
+.education .card h3{color:#1565c0;}
+.education .card a{background:#1565c0;}
+
+.videos .card h3{color:#d50000;}
+.videos .card a{background:#d50000;}
+
+.career{
+    background:linear-gradient(135deg,#061b3a,#0757c9);
+    color:white;
+    border-radius:25px;
+    padding:40px 25px;
+    text-align:center;
 }
 
-.featured-box h2 {
-    color: #0757c9;
-    margin-bottom: 10px;
+.career h2{
+    font-size:32px;
+    margin-bottom:12px;
 }
 
-.featured-box p {
-    line-height: 1.6;
-    color: #555;
+.career p{
+    max-width:750px;
+    margin:0 auto 20px;
 }
 
-
-/* ==============================
-   FOOTER
-================================ */
-
-footer {
-    background: #111;
-    color: white;
-
-    text-align: center;
-
-    padding: 25px 15px;
-
-    margin-top: 30px;
+.quick{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
 }
 
-footer h3 {
-    margin-bottom: 8px;
+.quick a{
+    background:white;
+    padding:18px 10px;
+    border-radius:15px;
+    text-align:center;
+    text-decoration:none;
+    color:#0757c9;
+    font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
 
-
-/* ==============================
-   MOBILE BOTTOM NAVIGATION
-================================ */
-
-.bottom-nav {
-    position: fixed;
-
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    display: flex;
-
-    justify-content: space-around;
-
-    background: #0757c9;
-
-    padding: 10px 5px;
-
-    z-index: 1000;
-
-    box-shadow:
-        0 -3px 10px rgba(0,0,0,0.2);
+.youtube{
+    margin-top:35px;
+    background:linear-gradient(135deg,#ff0000,#c40000);
+    color:white;
+    border-radius:22px;
+    padding:35px 20px;
+    text-align:center;
 }
 
-.bottom-nav a {
-    color: white;
-
-    text-decoration: none;
-
-    text-align: center;
-
-    font-size: 12px;
+.youtube h2{
+    font-size:30px;
+    margin-bottom:10px;
 }
 
-.bottom-nav span {
-    display: block;
-
-    font-size: 20px;
-
-    margin-bottom: 3px;
+.youtube p{
+    margin-bottom:20px;
 }
 
+.youtube-btn{
+    display:inline-block;
+    background:white;
+    color:#d00000;
+    padding:13px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-/* ==============================
-   MOBILE
-================================ */
+.contact{
+    background:#ffffff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
 
-@media (max-width: 600px) {
+.contact a{
+    color:#0757c9;
+    font-weight:bold;
+    text-decoration:none;
+}
 
-    header h1 {
-        font-size: 25px;
+footer{
+    background:#061b3a;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:30px;
+}
+
+footer a{
+    color:#00c8ff;
+    text-decoration:none;
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:29px;
     }
 
-    .hero {
-        padding: 40px 18px;
+    .hero{
+        min-height:400px;
     }
 
-    .hero h2 {
-        font-size: 26px;
+    .hero h2{
+        font-size:31px;
     }
 
-    .hero p {
-        font-size: 15px;
+    .hero p{
+        font-size:17px;
     }
 
-    /* Hide desktop navigation on mobile */
-    .navbar {
-        display: none;
+    nav a{
+        font-size:12px;
+        padding:7px 9px;
     }
 
-    .container {
-        grid-template-columns: 1fr;
-        padding: 15px;
+    .section-title h2{
+        font-size:27px;
     }
 
-    .card {
-        padding: 22px 15px;
-    }
-
-    /* Step 2 cards */
-    .category-section {
-        padding: 25px 15px;
-    }
-
-    .category-section h2 {
-        font-size: 26px;
-    }
-
-    .category-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-    }
-
-    .category-card img {
-        height: 120px;
-    }
-
-    .card-content {
-        padding: 10px;
-    }
-
-    .card-content h3 {
-        font-size: 16px;
-    }
-
-    .card-content p {
-        font-size: 12px;
-    }
 }
 
 </style>
 </head>
 
-
 <body>
-
-
-<!-- ==============================
-     HEADER
-================================ -->
 
 <header>
 
-    <h1>Guna Media Hub</h1>
+<h1>🌐 Guna Media Hub</h1>
 
-    <p>
-        News • Sports • AI • Education • Videos • Cooking
-    </p>
+<p>News • Sports • AI • Education • Career • Videos</p>
 
 </header>
 
+<nav>
 
-<!-- ==============================
-     DESKTOP NAVIGATION
-================================ -->
+<a href="index.html">🏠 Home</a>
 
-<nav class="navbar">
+<a href="news.html">📰 News</a>
 
-    <a href="index.html">Home</a>
+<a href="sports.html">🏆 Sports</a>
 
-    <a href="news.html">News</a>
+<a href="ai.html">🤖 AI</a>
 
-    <a href="sports.html">Sports</a>
+<a href="education.html">🎓 Education</a>
 
-    <a href="ai.html">AI</a>
+<a href="videos.html">🎬 Videos</a>
 
-    <a href="education.html">Education</a>
-
-    <a href="videos.html">Videos</a>
-
-    <a href="profile.html">Profile</a>
-
-    <a href="contact.html">Contact</a>
+<a href="profile.html">👤 Profile</a>
 
 </nav>
 
 
-<!-- ==============================
-     HERO
-================================ -->
+<!-- HERO -->
 
 <section class="hero">
 
-    <h2>
-        Welcome to Guna Media Hub
-    </h2>
+<div class="hero-content">
 
-    <p>
-        Your destination for the latest News,
-        Sports, Artificial Intelligence,
-        Education, Cooking and Videos.
-    </p>
+<h2>Welcome to Guna Media Hub</h2>
 
-    <a class="button" href="#explore">
-        Explore Now
-    </a>
+<p>
+Your place for News, Sports, Artificial Intelligence,
+Education, Career information and Videos.
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn btn-white" href="news.html">
+📰 Latest News
+</a>
+
+<a class="btn btn-white" href="sports.html">
+🏆 Sports
+</a>
+
+<a class="btn btn-white" href="ai.html">
+🤖 Explore AI
+</a>
+
+<a class="btn btn-white" href="education.html">
+🎓 Education
+</a>
+
+<a class="btn btn-red"
+href="https://youtube.com/shorts/0GGLaMIpEPc?si=tXa3waDKnbofMk8x"
+target="_blank">
+▶ YouTube Videos
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- ==============================
-     MAIN CONTENT TITLE
-================================ -->
+<!-- MAIN PAGES -->
 
-<section class="section-title" id="explore">
+<section class="container">
 
-    <h2>
-        Explore Guna Media Hub
-    </h2>
+<div class="section-title">
 
-    <p>
-        Choose a category below
-    </p>
+<h2>🚀 Explore Guna Media Hub</h2>
 
-</section>
-
-
-<!-- ==============================
-     MAIN CATEGORY CARDS
-================================ -->
-
-<div class="container">
-
-
-    <a href="news.html" class="card">
-
-        <div class="icon">
-            📰
-        </div>
-
-        <h3>
-            Latest News
-        </h3>
-
-        <p>
-            Breaking national and international
-            news updates.
-        </p>
-
-    </a>
-
-
-    <a href="sports.html" class="card">
-
-        <div class="icon">
-            🏏
-        </div>
-
-        <h3>
-            Sports
-        </h3>
-
-        <p>
-            Cricket, Football and major sports
-            updates and highlights.
-        </p>
-
-    </a>
-
-
-    <a href="ai.html" class="card">
-
-        <div class="icon">
-            🤖
-        </div>
-
-        <h3>
-            AI & Technology
-        </h3>
-
-        <p>
-            Artificial Intelligence, technology
-            news, tools and tutorials.
-        </p>
-
-    </a>
-
-
-    <a href="education.html" class="card">
-
-        <div class="icon">
-            📚
-        </div>
-
-        <h3>
-            Education
-        </h3>
-
-        <p>
-            TNPSC, government exams, courses
-            and career guidance.
-        </p>
-
-    </a>
-
-
-    <a href="videos.html" class="card">
-
-        <div class="icon">
-            🎥
-        </div>
-
-        <h3>
-            YouTube Videos
-        </h3>
-
-        <p>
-            Watch the latest videos and
-            YouTube Shorts.
-        </p>
-
-    </a>
-
-
-    <a href="cooking.html" class="card">
-
-        <div class="icon">
-            🍳
-        </div>
-
-        <h3>
-            Cooking
-        </h3>
-
-        <p>
-            Easy recipes, cooking ideas
-            and delicious food.
-        </p>
-
-    </a>
+<p>Choose a category and explore useful information</p>
 
 </div>
 
 
-<!-- ==============================
-     STEP 2 - REAL IMAGE CATEGORIES
-================================ -->
-
-<section class="category-section">
-
-    <h2>
-        Latest Categories
-    </h2>
+<div class="grid">
 
 
-    <div class="category-grid">
+<!-- NEWS -->
+
+<div class="card news">
+
+<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h3>📰 News</h3>
+
+<p>
+Tamil Nadu, India, technology, business,
+career and important news information.
+</p>
+
+<a href="news.html">
+Explore News →
+</a>
+
+</div>
+
+</div>
 
 
-        <!-- NEWS -->
+<!-- SPORTS -->
 
-        <a href="news.html" class="category-card">
+<div class="card sports">
 
-            <img
-                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80"
-                alt="News">
+<img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80">
 
-            <div class="card-content">
+<div class="card-content">
 
-                <h3>
-                    📰 News
-                </h3>
+<h3>🏆 Sports</h3>
 
-                <p>
-                    Latest news and trending updates
-                </p>
+<p>
+Cricket, football, athletics, tennis,
+badminton and Indian sports updates.
+</p>
 
-            </div>
+<a href="sports.html">
+Explore Sports →
+</a>
 
-        </a>
+</div>
 
-
-        <!-- SPORTS -->
-
-        <a href="sports.html" class="category-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
-                alt="Cricket Sports">
-
-            <div class="card-content">
-
-                <h3>
-                    🏏 Cricket & Sports
-                </h3>
-
-                <p>
-                    Live scores, matches and sports news
-                </p>
-
-            </div>
-
-        </a>
+</div>
 
 
-        <!-- AI -->
+<!-- AI -->
 
-        <a href="ai.html" class="category-card">
+<div class="card ai">
 
-            <img
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
-                alt="Artificial Intelligence">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80">
 
-            <div class="card-content">
+<div class="card-content">
 
-                <h3>
-                    🤖 AI & Technology
-                </h3>
+<h3>🤖 Artificial Intelligence</h3>
 
-                <p>
-                    Artificial intelligence and technology
-                </p>
+<p>
+Explore AI news, tools, ChatGPT,
+robotics and the future of technology.
+</p>
 
-            </div>
+<a href="ai.html">
+Explore AI →
+</a>
 
-        </a>
+</div>
 
-
-        <!-- EDUCATION -->
-
-        <a href="education.html" class="category-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
-                alt="Education">
-
-            <div class="card-content">
-
-                <h3>
-                    🎓 Education
-                </h3>
-
-                <p>
-                    Learning, courses and educational updates
-                </p>
-
-            </div>
-
-        </a>
+</div>
 
 
-        <!-- COOKING -->
+<!-- EDUCATION -->
 
-        <a href="cooking.html" class="category-card">
+<div class="card education">
 
-            <img
-                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
-                alt="Cooking">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80">
 
-            <div class="card-content">
+<div class="card-content">
 
-                <h3>
-                    🍳 Cooking & Recipes
-                </h3>
+<h3>🎓 Education</h3>
 
-                <p>
-                    Delicious recipes and cooking ideas
-                </p>
+<p>
+School, higher education, competitive exams,
+online courses, skills and career resources.
+</p>
 
-            </div>
+<a href="education.html">
+Explore Education →
+</a>
 
-        </a>
+</div>
 
-
-    </div>
-
-</section>
+</div>
 
 
-<!-- ==============================
-     FEATURED AREA
-================================ -->
+<!-- VIDEOS -->
 
-<section class="featured">
+<div class="card videos">
 
-    <div class="featured-box">
+<img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=900&q=80">
 
-        <h2>
-            🌟 What's New?
-        </h2>
+<div class="card-content">
 
-        <p>
-            Welcome to the improved Guna Media Hub.
-            Explore our different sections for News,
-            Sports, AI, Education, Videos and Cooking.
-            New content will be added regularly.
-        </p>
+<h3>🎬 Videos</h3>
 
-    </div>
+<p>
+Watch Shorts and videos covering news,
+sports, AI, education and other topics.
+</p>
+
+<a href="videos.html">
+Watch Videos →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROFILE -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h3>👤 Profile & Contact</h3>
+
+<p>
+Learn more about Guna Media Hub
+and find contact information.
+</p>
+
+<a href="profile.html"
+style="background:#ff8f00;">
+View Profile →
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- ==============================
-     FOOTER
-================================ -->
+<!-- QUICK ACCESS -->
+
+<section class="container">
+
+<div class="section-title">
+
+<h2>⚡ Quick Access</h2>
+
+<p>Useful links from Guna Media Hub</p>
+
+</div>
+
+<div class="quick">
+
+<a href="news.html">
+📰 News
+</a>
+
+<a href="sports.html">
+🏆 Sports
+</a>
+
+<a href="ai.html">
+🤖 AI
+</a>
+
+<a href="education.html">
+🎓 Education
+</a>
+
+<a href="videos.html">
+🎬 Videos
+</a>
+
+<a href="profile.html">
+👤 Contact
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CAREER -->
+
+<section class="container">
+
+<div class="career">
+
+<h2>💼 Jobs & Career</h2>
+
+<p>
+Find useful career information, job opportunities,
+career guidance and government employment resources.
+</p>
+
+<a class="btn btn-white"
+href="https://www.ncs.gov.in/"
+target="_blank"
+rel="noopener noreferrer">
+
+🔎 National Career Service
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- YOUTUBE -->
+
+<section class="container">
+
+<div class="youtube">
+
+<h2>▶ Guna Media Hub YouTube</h2>
+
+<p>
+Watch our latest Shorts and videos on YouTube.
+</p>
+
+<a class="youtube-btn"
+href="https://youtube.com/shorts/0GGLaMIpEPc?si=tXa3waDKnbofMk8x"
+target="_blank"
+rel="noopener noreferrer">
+
+▶ Watch YouTube Shorts
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="container">
+
+<div class="contact">
+
+<h2>📞 Contact Guna Media Hub</h2>
+
+<br>
+
+<p>
+📱 <a href="tel:9894136516">9894136516</a>
+</p>
+
+<p>
+📱 <a href="tel:6382395125">6382395125</a>
+</p>
+
+<p>
+📍 Coimbatore – 638106
+</p>
+
+<br>
+
+<a href="profile.html">
+View Full Profile & Contact →
+</a>
+
+</div>
+
+</section>
+
 
 <footer>
 
-    <h3>
-        Guna Media Hub
-    </h3>
+<p>© 2026 Guna Media Hub</p>
 
-    <p>
-        Stay informed. Stay ahead.
-    </p>
+<p>
+News • Sports • AI • Education • Career • Videos
+</p>
 
-    <p>
-        © 2026 Guna Media Hub. All Rights Reserved.
-    </p>
+<br>
+
+<a href="index.html">
+Back to Top ↑
+</a>
 
 </footer>
 
-
-<!-- ==============================
-     MOBILE BOTTOM NAVIGATION
-================================ -->
-
-<div class="bottom-nav">
-
-    <a href="index.html">
-
-        <span>🏠</span>
-
-        Home
-
-    </a>
-
-
-    <a href="news.html">
-
-        <span>📰</span>
-
-        News
-
-    </a>
-
-
-    <a href="videos.html">
-
-        <span>🎥</span>
-
-        Videos
-
-    </a>
-
-
-    <a href="profile.html">
-
-        <span>👤</span>
-
-        Profile
-
-    </a>
-
-</div>
-
-
 </body>
-
 </html>
-```
