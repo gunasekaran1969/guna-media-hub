@@ -2,1089 +2,120 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AI & Technology | Guna Media Hub</title>
-
-<meta name="description"
-content="Artificial Intelligence, ChatGPT, AI tools, machine learning, robotics and technology updates from Guna Media Hub.">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Guna Media Hub - AI</title>
 
 <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f3f7fc;
-    color: #222;
-}
-
-/* HEADER */
-
-header {
-    background: linear-gradient(135deg, #4b00b8, #9c27ff, #00a8ff);
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
-}
-
-header h1 {
-    font-size: 32px;
-    margin-bottom: 6px;
-}
-
-header p {
-    font-size: 15px;
-}
-
-/* NAVIGATION */
-
-nav {
-    background: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.10);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav a {
-    text-decoration: none;
-    color: #5b16a5;
-    font-weight: bold;
-    padding: 9px 14px;
-    border-radius: 25px;
-    transition: 0.3s;
-}
-
-nav a:hover,
-nav a.active {
-    background: #6a1b9a;
-    color: white;
-}
-
-/* MAIN */
-
-.container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 25px 15px 80px;
-}
-
-/* PAGE TITLE */
-
-.page-title {
-    text-align: center;
-    margin-bottom: 28px;
-}
-
-.page-title h2 {
-    color: #6a1b9a;
-    font-size: 32px;
-}
-
-.page-title p {
-    color: #666;
-    margin-top: 7px;
-}
-
-/* HERO */
-
-.hero {
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-    margin-bottom: 42px;
-}
-
-.hero img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-}
-
-.hero-content {
-    padding: 23px;
-}
-
-.hero-label {
-    display: inline-block;
-    background: #7b1fa2;
-    color: white;
-    padding: 7px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.hero-content h2 {
-    color: #4a148c;
-    font-size: 27px;
-    margin-bottom: 8px;
-}
-
-.hero-content p {
-    color: #666;
-}
-
-/* SECTION */
-
-.section {
-    margin-top: 42px;
-}
-
-.section-heading {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding-bottom: 11px;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #8e24aa;
-}
-
-.section-icon {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.section-heading h2 {
-    font-size: 27px;
-    color: #6a1b9a;
-}
-
-.section-heading p {
-    color: #777;
-    font-size: 13px;
-}
-
-/* GRID */
-
-.ai-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-/* CARD */
-
-.ai-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.09);
-    transition: 0.25s;
-}
-
-.ai-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 9px 24px rgba(0,0,0,0.15);
-}
-
-.ai-card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 17px;
-}
-
-.category {
-    display: inline-block;
-    background: #7b1fa2;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 5px 11px;
-    border-radius: 15px;
-    margin-bottom: 9px;
-}
-
-.card-content small {
-    display: block;
-    color: #888;
-    margin-bottom: 7px;
-}
-
-.card-content h3 {
-    color: #4a148c;
-    font-size: 19px;
-    line-height: 1.3;
-    margin-bottom: 8px;
-}
-
-.card-content p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 14px;
-    padding: 9px 17px;
-    background: #7b1fa2;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-.read-more:hover {
-    background: #4a148c;
-}
-
-/* DIFFERENT SECTION COLORS */
-
-.chatgpt .section-heading {
-    border-color: #10a37f;
-}
-
-.chatgpt .section-heading h2 {
-    color: #087f63;
-}
-
-.chatgpt .category,
-.chatgpt .read-more {
-    background: #10a37f;
-}
-
-.tools .section-heading {
-    border-color: #1565c0;
-}
-
-.tools .section-heading h2 {
-    color: #1257a6;
-}
-
-.tools .category,
-.tools .read-more {
-    background: #1565c0;
-}
-
-.robotics .section-heading {
-    border-color: #ef6c00;
-}
-
-.robotics .section-heading h2 {
-    color: #d85f00;
-}
-
-.robotics .category,
-.robotics .read-more {
-    background: #ef6c00;
-}
-
-.future .section-heading {
-    border-color: #00838f;
-}
-
-.future .section-heading h2 {
-    color: #006b75;
-}
-
-.future .category,
-.future .read-more {
-    background: #00838f;
-}
-
-/* HOME BUTTON */
-
-.home-button {
-    text-align: center;
-    margin-top: 48px;
-}
-
-.home-button a {
-    display: inline-block;
-    background: linear-gradient(135deg, #6a1b9a, #00a8ff);
-    color: white;
-    text-decoration: none;
-    padding: 13px 26px;
-    border-radius: 30px;
-    font-weight: bold;
-}
-
-/* FOOTER */
-
-footer {
-    background: #29103f;
-    color: white;
-    text-align: center;
-    padding: 27px 15px;
-}
-
-footer p {
-    margin: 5px;
-}
-
-/* MOBILE */
-
-@media(max-width: 850px) {
-
-    .ai-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media(max-width: 600px) {
-
-    header h1 {
-        font-size: 26px;
-    }
-
-    nav a {
-        font-size: 14px;
-        padding: 7px 10px;
-    }
-
-    .ai-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-heading h2 {
-        font-size: 23px;
-    }
-
-    .hero img {
-        height: 210px;
-    }
-
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f3f8}
+header{background:linear-gradient(135deg,#6a1b9a,#ab47bc);color:white;text-align:center;padding:30px}
+nav{background:#21002e;text-align:center;padding:12px;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;margin:4px;padding:9px 12px;display:inline-block;border-radius:20px;font-weight:bold}
+nav a:hover{background:#9c27b0}
+.container{max-width:1150px;margin:auto;padding:40px 15px}
+.hero{height:320px;border-radius:22px;background:linear-gradient(#0008,#0008),url("https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1500&q=80") center/cover;color:white;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h2{font-size:42px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:30px}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 5px 18px #0002}
+.card img{width:100%;height:180px;object-fit:cover}
+.content{padding:20px}
+.content h3{color:#7b1fa2;margin-bottom:10px}
+.content p{color:#666;margin-bottom:18px}
+.btn{display:inline-block;background:#7b1fa2;color:white;padding:11px 18px;border-radius:25px;text-decoration:none;font-weight:bold}
+footer{background:#21002e;color:white;text-align:center;padding:30px;margin-top:30px}
+footer a{color:#ce93d8}
 </style>
 </head>
 
 <body>
 
-
-<!-- HEADER -->
-
 <header>
-
-    <h1>🤖 Guna Media Hub</h1>
-
-    <p>News • Sports • AI • Education • Videos</p>
-
+<h1>🤖 Guna Media Hub</h1>
+<p>Artificial Intelligence • Technology • AI Tools</p>
 </header>
 
-
-<!-- NAVIGATION -->
-
 <nav>
-
-    <a href="index.html">🏠 Home</a>
-
-    <a href="news.html">📰 News</a>
-
-    <a href="sports.html">🏆 Sports</a>
-
-    <a href="ai.html" class="active">🤖 AI</a>
-
-    <a href="education.html">🎓 Education</a>
-
-    <a href="videos.html">▶️ Videos</a>
-
-    <a href="profile.html">👤 Profile</a>
-
-    <a href="contact.html">✉️ Contact</a>
-
+<a href="index.html">🏠 Home</a>
+<a href="news.html">📰 News</a>
+<a href="sports.html">🏆 Sports</a>
+<a href="ai.html">🤖 AI</a>
+<a href="education.html">🎓 Education</a>
+<a href="videos.html">🎬 Videos</a>
+<a href="profile.html">👤 Profile</a>
 </nav>
 
-
-<main class="container">
-
-
-<!-- TITLE -->
-
-<div class="page-title">
-
-    <h2>🤖 Artificial Intelligence</h2>
-
-    <p>
-        AI news, tools, technology, robotics and the future of artificial intelligence
-    </p>
-
-</div>
-
-
-<!-- HERO -->
+<div class="container">
 
 <div class="hero">
-
-    <img
-    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
-    alt="Artificial Intelligence">
-
-    <div class="hero-content">
-
-        <span class="hero-label">
-            🤖 AI & TECHNOLOGY
-        </span>
-
-        <h2>
-            Explore the World of Artificial Intelligence
-        </h2>
-
-        <p>
-            Discover AI developments, useful tools, ChatGPT,
-            machine learning, robotics and emerging technologies.
-        </p>
-
-    </div>
-
+<div>
+<h2>🤖 Artificial Intelligence</h2>
+<p>Explore AI technology and useful AI resources</p>
+</div>
 </div>
 
-
-<!-- AI NEWS -->
-
-<section class="section">
-
-
-    <div class="section-heading">
-
-        <img
-        class="section-icon"
-        src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=150&q=80"
-        alt="AI News">
-
-        <div>
-
-            <h2>🧠 AI News</h2>
-
-            <p>Latest developments in artificial intelligence</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="ai-grid">
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
-            alt="AI">
-
-            <div class="card-content">
-
-                <span class="category">AI News</span>
-
-                <small>Artificial Intelligence</small>
-
-                <h3>
-                    Latest AI Developments
-                </h3>
-
-                <p>
-                    Discover important developments and
-                    innovations in artificial intelligence.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
-            alt="AI Robot">
-
-            <div class="card-content">
-
-                <span class="category">AI Research</span>
-
-                <small>Innovation</small>
-
-                <h3>
-                    New AI Research & Innovation
-                </h3>
-
-                <p>
-                    Explore new ideas and research shaping
-                    the future of AI.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
-            alt="AI Technology">
-
-            <div class="card-content">
-
-                <span class="category">AI Trends</span>
-
-                <small>Technology</small>
-
-                <h3>
-                    AI Trends to Watch
-                </h3>
-
-                <p>
-                    Learn about emerging artificial intelligence
-                    trends and applications.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- CHATGPT -->
-
-<section class="section chatgpt">
-
-
-    <div class="section-heading">
-
-        <img
-        class="section-icon"
-        src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=150&q=80"
-        alt="AI Assistant">
-
-        <div>
-
-            <h2>💬 ChatGPT & AI Assistants</h2>
-
-            <p>AI assistants, productivity and everyday uses</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="ai-grid">
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=800&q=80"
-            alt="AI Assistant">
-
-            <div class="card-content">
-
-                <span class="category">ChatGPT</span>
-
-                <small>AI Assistant</small>
-
-                <h3>
-                    ChatGPT & AI Assistants
-                </h3>
-
-                <p>
-                    Learn how AI assistants can help with
-                    writing, learning and productivity.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=800&q=80"
-            alt="AI chatbot">
-
-            <div class="card-content">
-
-                <span class="category">AI Tools</span>
-
-                <small>Productivity</small>
-
-                <h3>
-                    Useful AI Tools
-                </h3>
-
-                <p>
-                    Discover AI-powered tools that can support
-                    work, study and creativity.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
-            alt="Artificial Intelligence">
-
-            <div class="card-content">
-
-                <span class="category">Productivity</span>
-
-                <small>AI</small>
-
-                <h3>
-                    AI for Everyday Work
-                </h3>
-
-                <p>
-                    Practical ways to use artificial intelligence
-                    for everyday tasks.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- AI TOOLS -->
-
-<section class="section tools">
-
-
-    <div class="section-heading">
-
-        <img
-        class="section-icon"
-        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=150&q=80"
-        alt="Technology">
-
-        <div>
-
-            <h2>🛠️ AI Tools & Technology</h2>
-
-            <p>Discover useful AI tools and technology</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="ai-grid">
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
-            alt="Technology">
-
-            <div class="card-content">
-
-                <span class="category">Technology</span>
-
-                <small>AI Tools</small>
-
-                <h3>
-                    New AI Tools
-                </h3>
-
-                <p>
-                    Explore new AI-powered applications and
-                    digital tools.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-            alt="Data Analytics">
-
-            <div class="card-content">
-
-                <span class="category">Data</span>
-
-                <small>AI & Analytics</small>
-
-                <h3>
-                    AI & Data Analytics
-                </h3>
-
-                <p>
-                    Understand how AI is being used with
-                    data and analytics.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
-            alt="Cyber technology">
-
-            <div class="card-content">
-
-                <span class="category">Digital</span>
-
-                <small>Technology</small>
-
-                <h3>
-                    AI & Digital Transformation
-                </h3>
-
-                <p>
-                    See how artificial intelligence is
-                    transforming digital services.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- ROBOTICS -->
-
-<section class="section robotics">
-
-
-    <div class="section-heading">
-
-        <img
-        class="section-icon"
-        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=150&q=80"
-        alt="Robotics">
-
-        <div>
-
-            <h2>🦾 Robotics</h2>
-
-            <p>Robots, automation and intelligent machines</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="ai-grid">
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
-            alt="Robot">
-
-            <div class="card-content">
-
-                <span class="category">Robotics</span>
-
-                <small>Automation</small>
-
-                <h3>
-                    Latest Robotics Developments
-                </h3>
-
-                <p>
-                    Discover new robots, automation systems
-                    and intelligent machines.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
-            alt="Robot technology">
-
-            <div class="card-content">
-
-                <span class="category">Automation</span>
-
-                <small>Robotics</small>
-
-                <h3>
-                    Robots in Everyday Life
-                </h3>
-
-                <p>
-                    Explore how robotics and automation
-                    are being used in different industries.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80"
-            alt="Future technology">
-
-            <div class="card-content">
-
-                <span class="category">Future Tech</span>
-
-                <small>Robotics</small>
-
-                <h3>
-                    The Future of Intelligent Machines
-                </h3>
-
-                <p>
-                    Learn about the future possibilities
-                    of robotics and intelligent systems.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- FUTURE OF AI -->
-
-<section class="section future">
-
-
-    <div class="section-heading">
-
-        <img
-        class="section-icon"
-        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=150&q=80"
-        alt="Future Technology">
-
-        <div>
-
-            <h2>🚀 Future of AI</h2>
-
-            <p>Emerging technologies and the future of AI</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="ai-grid">
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
-            alt="Future technology">
-
-            <div class="card-content">
-
-                <span class="category">Future</span>
-
-                <small>Emerging Technology</small>
-
-                <h3>
-                    The Future of Artificial Intelligence
-                </h3>
-
-                <p>
-                    Explore emerging technologies and
-                    possible future applications of AI.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
-            alt="Technology team">
-
-            <div class="card-content">
-
-                <span class="category">Innovation</span>
-
-                <small>Technology</small>
-
-                <h3>
-                    AI & Innovation
-                </h3>
-
-                <p>
-                    How artificial intelligence is creating
-                    new possibilities for innovation.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <article class="ai-card">
-
-            <img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
-            alt="Technology learning">
-
-            <div class="card-content">
-
-                <span class="category">Learning</span>
-
-                <small>AI Education</small>
-
-                <h3>
-                    Learn About AI
-                </h3>
-
-                <p>
-                    Beginner-friendly information for people
-                    who want to understand AI.
-                </p>
-
-                <a href="#" class="read-more">
-                    Read More →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- HOME BUTTON -->
-
-<div class="home-button">
-
-    <a href="index.html">
-        🏠 Back to Guna Media Hub
-    </a>
-
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>📰 AI News</h3>
+<p>Latest AI developments and announcements.</p>
+<a class="btn" href="https://openai.com/news/" target="_blank">AI News →</a>
+</div>
 </div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>💬 ChatGPT</h3>
+<p>Explore ChatGPT and AI assistance.</p>
+<a class="btn" href="https://chatgpt.com/" target="_blank">Open ChatGPT →</a>
+</div>
+</div>
 
-</main>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>🤖 AI Technology</h3>
+<p>Explore AI products, research and technology.</p>
+<a class="btn" href="https://openai.com/" target="_blank">Explore AI →</a>
+</div>
+</div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>🧠 AI Learning</h3>
+<p>Find online courses related to AI and technology.</p>
+<a class="btn" href="https://swayam.gov.in/search_courses" target="_blank">Learn AI →</a>
+</div>
+</div>
 
-<!-- FOOTER -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>⚙️ AI Tools</h3>
+<p>Explore modern AI technology and tools.</p>
+<a class="btn" href="https://openai.com/" target="_blank">AI Tools →</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>🚀 Future of AI</h3>
+<p>Discover research and developments shaping AI.</p>
+<a class="btn" href="https://openai.com/research/" target="_blank">Explore Future →</a>
+</div>
+</div>
+
+</div>
+</div>
 
 <footer>
-
-    <p><strong>🤖 Guna Media Hub</strong></p>
-
-    <p>
-        News • Sports • AI • Education • Videos
-    </p>
-
-    <p>
-        © 2026 Guna Media Hub. All Rights Reserved.
-    </p>
-
+<p>© 2026 Guna Media Hub</p>
+<a href="index.html">🏠 Back to Home</a>
 </footer>
-
 
 </body>
 </html>
